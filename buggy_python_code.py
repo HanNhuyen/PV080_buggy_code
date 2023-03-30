@@ -28,7 +28,7 @@ def fetch_website(urllib_version, url):
  
     try: 
         http = urllib.PoolManager()
-        r = http.request('GET', url)
+        # r = http.request('GET', url)
     except:
         print('Exception')
 
@@ -60,6 +60,6 @@ if __name__ == '__main__':
         load_yaml(input("File name: "))
         print("Executed -ls on current folder")
     elif choice == "4":
-        password = input("Enter master password: ")
-        authenticate(password)
+        passwd = input("Enter master password: ")
+        authenticate(passwd)
 
